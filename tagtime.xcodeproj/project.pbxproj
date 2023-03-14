@@ -14,6 +14,10 @@
 		4CFBA1A429BEE91700877F9F /* tagtimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBA1A329BEE91700877F9F /* tagtimeTests.swift */; };
 		4CFBA1AE29BEE91700877F9F /* tagtimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBA1AD29BEE91700877F9F /* tagtimeUITests.swift */; };
 		4CFBA1B029BEE91700877F9F /* tagtimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBA1AF29BEE91700877F9F /* tagtimeUITestsLaunchTests.swift */; };
+		4CFBA1BE29BEEE2000877F9F /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBA1BD29BEEE2000877F9F /* Ping.swift */; };
+		4CFBA1C029BEEE2E00877F9F /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBA1BF29BEEE2E00877F9F /* utils.swift */; };
+		4CFBA1C229BEEF0600877F9F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBA1C129BEEF0500877F9F /* Notification.swift */; };
+		4CFBA1C429BF25B100877F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBA1C329BF25B100877F9F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		4CFBA1A929BEE91700877F9F /* tagtimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagtimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFBA1AD29BEE91700877F9F /* tagtimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagtimeUITests.swift; sourceTree = "<group>"; };
 		4CFBA1AF29BEE91700877F9F /* tagtimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagtimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CFBA1BC29BEE93700877F9F /* tagtime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tagtime.entitlements; sourceTree = "<group>"; };
+		4CFBA1BD29BEEE2000877F9F /* Ping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
+		4CFBA1BF29BEEE2E00877F9F /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		4CFBA1C129BEEF0500877F9F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		4CFBA1C329BF25B100877F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,13 @@
 		4CFBA19129BEE91500877F9F /* tagtime */ = {
 			isa = PBXGroup;
 			children = (
+				4CFBA1BC29BEE93700877F9F /* tagtime.entitlements */,
 				4CFBA19229BEE91500877F9F /* tagtimeApp.swift */,
 				4CFBA19429BEE91500877F9F /* ContentView.swift */,
+				4CFBA1C329BF25B100877F9F /* AppDelegate.swift */,
+				4CFBA1C129BEEF0500877F9F /* Notification.swift */,
+				4CFBA1BD29BEEE2000877F9F /* Ping.swift */,
+				4CFBA1BF29BEEE2E00877F9F /* utils.swift */,
 				4CFBA19629BEE91700877F9F /* Assets.xcassets */,
 				4CFBA19829BEE91700877F9F /* Preview Content */,
 			);
@@ -257,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFBA1C429BF25B100877F9F /* AppDelegate.swift in Sources */,
 				4CFBA19529BEE91500877F9F /* ContentView.swift in Sources */,
+				4CFBA1C229BEEF0600877F9F /* Notification.swift in Sources */,
 				4CFBA19329BEE91500877F9F /* tagtimeApp.swift in Sources */,
+				4CFBA1BE29BEEE2000877F9F /* Ping.swift in Sources */,
+				4CFBA1C029BEEE2E00877F9F /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = tagtime/tagtime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tagtime/Preview Content\"";
@@ -443,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = tagtime/tagtime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tagtime/Preview Content\"";
